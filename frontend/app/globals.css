@@ -1,0 +1,15 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --bg: #f8fafc;
+  --card: #ffffff;
+  --border: #e2e8f0;
+}
+
+body {
+  background: radial-gradient(1200px 600px at 10% -10%, #dbeafe 0%, transparent 50%),
+    radial-gradient(800px 400px at 100% 0%, #ffedd5 0%, transparent 45%), var(--bg);
+  min-height: 100vh;
+}
