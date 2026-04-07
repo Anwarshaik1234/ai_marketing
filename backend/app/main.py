@@ -38,6 +38,11 @@ app.include_router(calendar.router)
 app.include_router(bonus.router)
 
 
+@app.get("/")
+async def root():
+    return {"message": "AI Marketing API is running", "docs": "/docs"}
+
+
 @app.get("/health")
 async def health():
     return {"status": "ok"}
